@@ -2,7 +2,7 @@
 
 // 1️⃣ Client-Side Navigation using <Link>
 /*
-Next.js provides a built-in <Link> component from 'next/link' 
+Next.js provides a built-in <Link> component from 'next/link'
 that enables client-side transitions between routes without full reload.
 */
 
@@ -21,3 +21,13 @@ that enables client-side transitions between routes without full reload.
 // }
 
 // ---------------CODE-END--------------- //
+
+
+/*
+❓ Do we need "use client" for components using <Link>?
+
+🔸 NO. You don’t need `"use client"` if the component only uses static JSX and <Link>.
+
+🔸 YES. You need `"use client"` if you use client-side hooks like:
+    - useState, useEffect, useRouter, etc.
+*/
